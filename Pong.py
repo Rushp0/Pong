@@ -89,6 +89,7 @@ class Ball:
         else:
             return random.randint(135,225)
 
+        
 def check_points(b):
     if b.x<0:
         player2.points+=1
@@ -103,6 +104,7 @@ def check_points(b):
         if b.step<8:
             b.step+=1
 
+            
 player1 = Paddle((1, 0), window) # turple has location of paddle
 player2 = Paddle((685, 0), window)
 b = Ball()
